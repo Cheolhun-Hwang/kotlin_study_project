@@ -23,3 +23,4 @@
 - 배열 등을 이용하여 게임 라운드 등을 구현할 수 있다.
 
 ![Alt text](/example_images/Screenshot_20181227-011621_KotlinProject.jpg)
+![Alt text](/example_images/Screenshot_20181227-012946_KotlinProject.jpg)
