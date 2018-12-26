@@ -34,6 +34,16 @@
                 android:backgroundTint="@color/green_600"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_marginRight="6.5sp"
+                android:layout_marginLeft="6.5sp"
+                android:id="@+id/main_exam_two"
+                android:text="@string/example_two"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/green_600"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
         </LinearLayout>
     </ScrollView>
 

@@ -6,9 +6,13 @@
     <string name="main_title">Kotlin Project</string>
 
     <string name="example_one">Example 1</string>
+    <string name="example_two">Example 2</string>
 
 
     <!-- Example 1 -->
     <string name="example_one_text_area_hint">아무 텍스트나 작성해주세요.</string>
     <string name="example_one_send_text_btn">작성완료</string>
+
+    <!-- Example 2 -->
+    <string name="example_two_select_text">가위 바위 보! 하나를 선택해주세요.</string>
 </resources>

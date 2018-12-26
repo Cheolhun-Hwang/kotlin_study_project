@@ -20,8 +20,28 @@ class TextTypingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_text_typing)
 
+        var actionbar = supportActionBar
+        actionbar!!.title = "  Chat_Example"
+
+        // Set action bar/toolbar sub title
+        actionbar.subtitle = "  간단한 이벤트 연습하기"
+
+        // Set action bar elevation
+        actionbar.elevation = 4.0F
+        actionbar.setDisplayHomeAsUpEnabled(true)
+
         init()
         setEvent()
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+//        return super.onSupportNavigateUp()
+        return true
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
     }
 
     fun init() : Unit{

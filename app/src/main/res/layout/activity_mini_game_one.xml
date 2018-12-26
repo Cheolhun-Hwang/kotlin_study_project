@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".t1.MiniGameOneActivity">
+    <android.support.constraint.ConstraintLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0sp">
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/example_two_round_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="1 Round"
+            android:textColor="@color/black"
+            android:textSize="21.5sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/example_two_goal_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Goal : 10"
+            android:textColor="@color/black"
+            android:textSize="22.5sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/example_two_score_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Score : 0"
+            android:textColor="@color/black"
+            android:textSize="21.5sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/example_two_goal_text" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="256sp"
+                android:layout_height="256sp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/android" />
+
+            <ImageView
+                android:id="@+id/example_two_show_android_play"
+                android:paddingLeft="45sp"
+                android:scaleType="fitCenter"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/question"
+                android:layout_width="128sp"
+                android:layout_height="128sp" />
+        </RelativeLayout>
+    </android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="94sp">
+        <TextView
+            android:paddingLeft="6.5sp"
+            android:textColor="@color/grey_700"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="@string/example_two_select_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="68sp">
+            <ImageButton
+                android:id="@+id/example_two_btn_rock"
+                android:padding="5sp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/rock"
+                android:background="@color/alpha"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageButton
+                android:id="@+id/example_two_btn_sissor"
+                android:padding="5sp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sissor"
+                android:background="@color/alpha"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageButton
+                android:id="@+id/example_two_btn_papper"
+                android:padding="5sp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/paper"
+                android:background="@color/alpha"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
